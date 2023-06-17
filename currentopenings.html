@@ -1,0 +1,2025 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="images/fevicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+
+    <title>PROMEA | CURRENTOPENINGS</title>
+    <link rel="stylesheet" href="css/fullpage.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sub.css">
+    <link href="styles.css" rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/fullpage.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="js/common.js"></script>
+
+
+    <script src="js/paging39de.js"></script>
+
+    <style>
+   
+        .hover {
+            cursor: pointer
+        }
+
+        .myDiv {
+            display: none;
+        }
+
+        #showOne {
+            color: red;
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        #showTwo {
+            color: green;
+            border: 1px solid green;
+            padding: 10px;
+        }
+
+        #showThree {
+            color: blue;
+            border: 1px solid blue;
+            padding: 10px;
+        }
+
+        .current-openings {
+            background: url(images/Current\ Openings.jpg) no-repeat center / cover;
+            height: 450px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('input[type="radio"]').click(function () {
+                var demovalue = $(this).val();
+                $("div.myDiv").hide();
+                $("#show" + demovalue).show();
+            });
+            $('input[name="search-keyword"]').change(function (e) {
+                if (Number(e.target.value) === 1) {
+                    $('.inputSearch').hide();
+                    $('.advancedSearch').show();
+                } else {
+                    $('.inputSearch').show();
+                    $('.advancedSearch').hide();
+                }
+            });
+        });
+    </script>
+    <link href="./css/jquery-simple-mobilemenu-slide.css" rel="stylesheet" />
+    <script src="./js/jquery-simple-mobilemenu.js"></script>
+    <!-- <script>
+     onload = function()
+      {
+      document.frm.document.body.style.fontFamily = "poppins";
+      }
+      </script> -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125033198-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125033198-1');
+</script>
+</head>
+
+<body>
+
+
+
+  <header id="header" class="sub_Header1 main_bg">
+    <div class="header clear">
+      <!-- logo -->
+      <h1 class="logo">
+        <a href="/"> <span class="logoImg"></span> </a>
+      </h1>
+
+      <!-- nav -->
+      <nav class="nav" id="nav">
+        <section class="mo_only sub_position">
+          <article>
+            <div class="article_wrap">
+              <div>
+                <form name="search_f1" action="/product/gnb_search">
+                  <fieldset>
+                    <input
+                      type="text"
+                      id="f1_search_val"
+                      name="search_val"
+                      placeholder="Search"
+                    />
+                    <input
+                      type="image"
+                      title="검색"
+                      src="/d_html/front/images/search.png"
+                    />
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </article>
+        </section>
+        <div class="nav_wrap_pc">
+          <ul class="clear lnb pc_only">
+            <li class="">
+              <a href="about"><span>About Us</span></a>
+              <div class="nav_sub">
+                <div class="subBox1 clear">
+                  <div class="sub_left sub_left1">
+                    <ul class="sub_type1">
+                      <li class=""><a href="about">Our Company</a></li>
+                      <li class="">
+                        <a href="ouralbums">Our Albums</a>
+                      </li>
+                      <li class="">
+                        <a href="ourjourney">Our Journey</a>
+                      </li>
+                      <li class="">
+                        <a href="ourcertificate">Our Certifications</a>
+                      </li>
+                      <li class=""><a href="ourteam">Our Team</a></li>
+                    </ul>
+                  </div>
+                  <div class="sub_right sub_right7 on">
+                    <a href="#">
+                      <span>Technical Support</span>
+                      <em class="sub_img">
+                        <img src="images/support02.jpg" alt="" />
+                      </em>
+                      <p>Promea promises a wide range of support.</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nav_sub">
+                <div class="subBox1 clear">
+                  <div class="sub_left sub_left1">
+                    <ul class="sub_type1">
+                      <li class=""><a href="about">Our Company</a></li>
+                      <li class="">
+                        <a href="ouralbums">Our Albums</a>
+                      </li>
+                      <li class="">
+                        <a href="ourjourney">Our Journey</a>
+                      </li>
+                      <li class="">
+                        <a href="ourcertificate">Our Certifications</a>
+                      </li>
+                      <li class=""><a href="ourteam">Our Team</a></li>
+                    </ul>
+                  </div>
+                  <div class="sub_right sub_right1">
+                    <a href="about">
+                      <span>Our Company</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Our_Company.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea Therapeutics is an innovative medical device
+                         manufacturing company specializing in Life Sciences, Diagnostics
+                         which includes Clinical Chemistry, Immunodiagnostics, Molecular Diagnostics and Infusion Therapies.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right1">
+                    <a href="ouralbums">
+                      <span>Our Albums</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Our_Albums.jpg" alt="" />
+                      </em>
+                      <p>
+                       We believe that "A picture is worth a thousand words & a video is worth a million emotions". We are presenting handpicked collection of various snaps and video clips connected with Promeans & Promea's products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right1">
+                    <a href="ourjourney">
+                      <span>Our Journey</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Our_Journey.jpg" alt="" />
+                      </em>
+                      <p>We firmly believe that the technology should support people and people should focus on what matters. Embarking our
+                         journey, we have successfully adopted & developed many unique products embedded with diverse technologies.</p>
+                    </a>
+                  </div>
+                  <!-- 2022-02-17 신규 추가 s -->
+                  <div class="sub_right sub_right1">
+                    <a href="ourcertificate">
+                      <span>Our Certifications</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Our_Certiications.jpg" alt="" />
+                      </em>
+                      <p>
+                        We're also pleased to have earned different ISO certifications for internal quality standards and good manufacturing practices, as well as recognitions for our focus on producing products that encourage our manufacturing capability & environmental sustainability.  
+                      </p>
+                    </a>
+                  </div>
+                  <!-- 2022-02-17 신규 추가 e -->
+                  <!-- 2021-09-15 신규 추가 s -->
+                  <div class="sub_right sub_right1">
+                    <a href="ourteam">
+                      <span>Our Team</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Our_Team.jpg" alt="" />
+                      </em>
+                      <p>
+                        We believe that the people behind a company are as important as the company itself. You're likely to find that kind of personalities who have brought the wealth of skills and experience from a wide range of backgrounds. 
+                      </p>
+                    </a>
+                  </div>
+                  <!-- 2021-09-15 신규 추가 e -->
+                  <!-- <div class="sub_right sub_right1">
+                    <a href="/company/ci">
+                      <span>CI</span>
+                      <em class="sub_img">
+                        <img
+                          src="https://www.sdbiosensor.com/d_html/front/images/media04.jpg"
+                          alt=""
+                        />
+                      </em>
+                      <p>
+                        We introduce our company's CI logo that shows the core
+                        identity of PROMEA.
+                      </p>
+                    </a>
+                  </div> -->
+                  <!-- <div class="sub_right sub_right1 on">
+                    <a href="/company/location">
+                      
+                      <em class="sub_img">
+                        <img
+                          src="images/Promea_Our_Company.jpg"
+                          alt=""
+                        />
+                      </em>
+                      <p>
+                        The headquarters and the factory locations of PROMEA
+                        are as follows.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                
+              </div> -->
+            </li>
+            <li class="">
+              <a href="electrolyte"><span>Products</span></a>
+              <div class="nav_sub">
+                <div class="subBox1 clear">
+                  <div class="sub_left sub_left3">
+                    <a href="electrolyte"><h4 style="position:absolute; top:-35px;left:40px;">IVD - Diagnostics</h4></a>
+                    <ul class="sub_type1 prodMenu">
+                      <li class="">
+                        <a href="electrolyte">Electrolyte</a>
+                      </li>
+
+                      <li class="">
+                        <a href="hematology">Hematology</a>
+                      </li>
+                      
+                      <li class="">
+                        <a href="clinicalchemistry"
+                          >Clinical Chemistry</a
+                        >
+                      </li>
+                      <li class="">
+                        <a href="immunoassay">Immuno Assay</a>
+                      </li>
+                      <li class="">
+                        <a href="glucose">Glucose</a>
+                      </li>
+                      <li class="">
+                        <a href="hemoglobin">Hemoglobin</a>
+                      </li>
+                      <li class="">
+                        <a href="rapid">Rapid</a>
+                      </li>
+                      <li class="">
+                        <a href="elisa">Elisa</a>
+                      </li>
+                      <li class="">
+                        <a href="rt-pcr">RT-PCR</a>
+                      </li>
+                      <!-- <li class="">
+                        <a href="ivfluids">Iv Fluids</a>
+                      </li> -->
+                      <li class="">
+                        <a href="biologics">Biologics</a>
+                      </li>
+                      <li class="">
+                        <a href="homehealthcare">Home Health Care</a>
+                      </li>
+                      <li class="">
+                        <a href="others" style="margin-bottom: 40px;">Others</a>
+                      </li>
+                      
+                      
+                      
+                      <br/>
+                      <a href="ivfluids">
+                        <h5
+                        style="position: absolute; top: -30px; right: -100px"
+                      >
+                        IV - Fluids
+                      </h5>
+                      </a>
+                      
+                      <li class="">
+                        <a href="ivfluids">Dextrose</a>
+                      </li>
+                      <li class="">
+                        <a href="ivfluids">Electrolytes</a>
+                      </li>
+                      <li class="">
+                        <a href="ivfluids">Anti Bacterial</a>
+                      </li>
+                      <li class="">
+                        <a href="ivfluids">Anti Fungal</a>
+                      </li>
+                      <li class="">
+                        <a href="ivfluids"> Anti Ameobocites</a>
+                      </li>
+                      <li class="">
+                        <a href="ivfluids">Analgesic & Antipyretic</a>
+                      </li>
+                      <li class="">
+                        <a href="ivfluids">Others</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub_right sub_right3 on">
+                    <a href="electrolyte">
+                      <span>Electrolyte</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Electrolyte.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea's Electrolyte is world's most Innovative and affordable solution for mid size laboratories.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="hematology">
+                      <span>Hematology</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Hematology.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea catering the needs of efficient labs with world's most efficient Hematology Analyzers.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="clinicalchemistry">
+                      <span>Clinical Chemistry</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Biochemistry.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea's Semi Automated Biochemistry Analyzer is one of the maintenance free semi auto analyzer.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="immunoassay">
+                      <span>Immuno Assay</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_ImmunoAssay.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea is delivering Point Of Care Immuno Assay products
+                         embedded with advanced technologies.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="glucose">
+                      <span>Glucose</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Glucometer.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea has developed & commercialized the affordable
+                         & connected glucose meter solutions.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="hemoglobin">
+                      <span>Hemoglobin</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Hemoglobin.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea dedicates the development of Hemoglobin Meter to Anemia Mukt Bharat
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="rapid">
+                      <span>Rapid</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Rapids.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea covers wide range of infectious rapids as well as specialty parameters of rapids.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="elisa">
+                      <span>Elisa</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Elisa.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea bringing the affordable automation to
+                         compliment the productivity of Elisa Kits.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="rt-pcr">
+                      <span>RT-PCR</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_RTPCR.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea has developed diverse range of RT-PCR
+                         solutions to cater the testing needs
+                      </p>
+                    </a>
+                  </div>
+                  <!-- <div class="sub_right sub_right3">
+                    <a href="/research/activity">
+                      <span>Iv Fluids</span>
+                      <em class="sub_img">
+                        <img src="images/company07.jpg" alt="" />
+                      </em>
+                      <p>
+                        We introduce the activities of the R&amp;D Center, the
+                        core of PROMEA.
+                      </p>
+                    </a>
+                  </div> -->
+                  <div class="sub_right sub_right3">
+                    <a href="biologics">
+                      <span>Biologics</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_Biologics.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea's unique range of Biologics produces various parameters of injectables.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="homehealthcare">
+                      <span>Home Health Care</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_HomeaHeathCare.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea is developing user friendly products prioritizing the Home Health Care.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="others">
+                      <span>Others</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_OtherDiagnostics.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea has indigenously developed lot of ancillary products to cater various diagnostic testing needs.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="/research/activity">
+                      
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="/research/activity">
+                      
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Dextrose</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_Dextrose.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Electrolytes</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_Electrolytes.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Anti Bacterial</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_AntiBacterial.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Anti fungal</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_Anti_Funga;.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Anti Ameobocites</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_Anti_Ameobocites.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Analgesic & Antipyretic</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_AntiAnalgesic_And_Antipyretic.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right3">
+                    <a href="ivfluids">
+                      <span>Others</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_LVP_Others.jpg" alt="" />
+                      </em>
+                      <p>
+                        Promea manufactures a wide range of High Quality Fluid Therapy Products.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <!-- <button type="button">CLOSE</button> -->
+              </div>
+            </li>
+            <li class="">
+              <a href="career"><span>Careers</span></a>
+              <div class="nav_sub">
+                <div class="subBox1 clear">
+                  <div class="sub_left sub_left4">
+                    <ul class="sub_type1">
+                      <li class="">
+                        <a href="currentopenings">Current Openings</a>
+                      </li>
+                      <!-- <li class=""><a href="workwithus">Work With Us</a></li> -->
+                    </ul>
+                  </div>
+                  <div class="sub_right sub_right4 on">
+                    <!-- <a href="/research/laboratory"> -->
+                      <a href="currentopenings">
+                      <span>Current Openings</span>
+                      <em class="sub_img">
+                        <img src="images/Promea_WorkBay.JPG" alt=""/>
+                      </em>
+                      <p>
+                        At Promea we're building a global team of amazing people. If you're curious, ambitions and ready to grow your career with us, we'd love to meet you !
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right4">
+                    <a href="/research/activity">
+                      <span>Work With Us</span>
+                      <em class="sub_img">
+                        <img src="images/company07.jpg" alt="" />
+                      </em>
+                      <p>
+                        We introduce the activities of the R&amp;D Center, the
+                        core of PROMEA.
+                      </p>
+                    </a>
+                  </div>
+                  <div class="sub_right sub_right4">
+                    <a href="/research/activity">
+                      <span>Achievements</span>
+                      <em class="sub_img">
+                        <img src="images/company04.jpg" alt="" />
+                      </em>
+                      <p>
+                        We introduce the activities of the R&amp;D Center, the
+                        core of PROMEA.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+                <!-- <button type="button">CLOSE</button> -->
+              </div>
+            </li>
+            <li class="">
+              <a href="blog"><span>Blogs</span></a>
+            </li>
+            <li class="">
+              <a href="getintouch"><span>Get In Touch</span></a>
+            </li>
+          </ul>
+          <button type="button" class="nav_close">CLOSE</button>
+        </div>
+      </nav>
+      <div class="menu">
+        <span class="btn-allmenu"></span>
+      </div>
+    </div>
+    <ul class="mobile_menu">
+      <div>
+        <a href="home" class="p-0">
+          <img class="img-fluid" src="images/logo-white.png" alt=""
+        /></a>
+      </div>
+       <li><a href="/">Home</a> </li>
+      <li>
+        <a href="#about">About Us</a>
+        <ul class="submenu">
+          <li class=""><a href="about">Our Company</a></li>
+          <li class=""><a href="ouralbums">Our Albums</a></li>
+          <li class=""><a href="ourjourney">Our Journey</a></li>
+          <li class="">
+            <a href="ourcertificate">Our Certifications</a>
+          </li>
+          <li class=""><a href="ourteam">Our Team</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#about">Products</a>
+        <ul class="submenu">
+          <li><a href="electrolyte">Diagnostics</a>
+            <ul class="submenu">
+            <li class=""><a href="electrolyte">Electrolyte</a></li>
+            <li class=""><a href="hematology">Hematology</a></li>
+            <li class="">
+              <a href="clinicalchemistry">Clinical Chemistry</a>
+            </li>
+            <li class=""><a href="immunoassay">Immuno Assay</a></li>
+            <li class=""><a href="glucose">Glucose</a></li>
+            <li class=""><a href="hemoglobin">Hemoglobin</a></li>
+            <li class=""><a href="rapid">Rapid</a></li>
+            <li class=""><a href="elisa">Elisa</a></li>
+            <li class=""><a href="rt-pcr">RT-PCR</a></li>
+            <li class=""><a href="ivfluids">IV Fluids</a></li>
+            <li class=""><a href="biologics">Biologics</a></li>
+            <li class=""><a href="homehealthcare">Home Health Care</a></li>
+            <li class=""><a href="others">Others</a></li>
+            </ul>
+          </li>
+          <li><a href="ivfluids">IV-Fluids</a>
+            <ul class="submenu">
+              <li class=""><a href="ivfluids">Dextrose</a></li>
+              <li class=""><a href="ivfluids">ELECTROLYTES</a></li>
+              <li class=""><a href="ivfluids">Anti Bacterial</a></li>
+              <li class=""><a href="ivfluids">Anti Fungal</a></li>
+              <li class=""><a href="ivfluids">Anti Ameobocites</a></li>
+              <li class=""><a href="ivfluids">Analgesic & Antipyretic</a></li>
+              <li class=""><a href="ivfluids">Others</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#career">Careers</a>
+        <ul class="submenu">
+          <li><a href="career">Careers</a></li>
+          <li><a href="currentopenings">Current Openings</a></li>
+        </ul>
+      </li>
+      <li><a href="blog">Blogs</a></li>
+      <li><a href="getintouch">Get In Touch</a></li>
+    </ul>
+  </header>
+    <script>
+        $("form[name=search_f1]").on('submit', function () {
+
+            if (!$("#f1_search_val").val()) {
+                alert("검색어를 입력해 주세요.");
+                return false;
+            }
+
+            return true;
+        });
+
+        $("form[name=search_f2]").on('submit', function () {
+
+            if (!$("#f2_search_val").val()) {
+                return false;
+            }
+
+            return true;
+        });
+    </script>
+    <div id="main" class="main">
+        <section class="section1">
+            <div class="current-openings">
+                <!-- <div class="visual_wrap inner-wrap">
+                    <h2>JOIN OUR <br><span>Legacy</span></h2>
+                    
+                </div>
+                <p>Home / Work With Us</p>
+            </div> -->
+        </section>
+
+
+
+
+        <!-- 
+        <section class="career-form">
+        <h3 class="text-center">Current Openings</h3>
+        <p class="text-center ml-5 mr-5 career-p">Let’s discover how we work together and what we do to support and learn from each other.
+             Learn what it means to be a proud Promean and how we benefit from our synergies.</p>
+
+         <p>
+        <div class="postions-section d-flex flex-row">
+            <div class="card1">
+                <h2>Executive / Sr. Executive - Contract</h2>
+                <div>
+                    <p>3-8 years</p>
+                    <p>Hyderabad</p>
+                    <button class="card1-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="card1">
+                <h2>Operator/JR Executive-Water system</h2>
+                <div>
+                    <p>3-8 years</p>
+                    <p>Hyderabad</p>
+                    <button class="card1-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="card1">
+                <h2>Operator/JR Executive-Water system</h2>
+                <div>
+                    <p>3-8 years</p>
+                    <p>Hyderabad</p>
+                    <button class="card1-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="card1">
+                <h2>Trainee/JR - Biologics Production</h2>
+                <div>
+                    <p>3-8 years</p>
+                    <p>Hyderabad</p>
+                    <button class="card1-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="card1">
+                <h2>Executive / Sr. Executive - Contract</h2>
+                <div>
+                    <p>3-8 years</p>
+                    <p>Hyderabad</p>
+                    <button class="card1-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">LEARN MORE</button>
+                </div>
+            </div>
+            <div class="card1">
+                <h2>Operator/JR Executive-Water system</h2>
+                <div>
+                    <p>3-8 years</p>
+                    <p>Hyderabad</p>
+                    <button class="card1-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">LEARN MORE</button>
+                </div>
+            </div>
+           
+        </div>
+        <!-- <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+            <fieldset>
+              <legend>Job</legend>
+              <label>
+                Application for *
+                <select name="Application for" required>
+                  <option>Job A</option>
+                  <option>Job B</option>
+                </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend>Personal data</legend>
+              <div class="two-cols">
+                <label>
+                  First name *
+                  <input type="text" name="First name" required>
+                </label>
+                <label>
+                  Family name *
+                  <input type="text" name="Family name" required>
+                </label>
+              </div>
+              <div class="two-cols">
+                <label>
+                  Citizenship
+                  <input type="text" name="Citizenship">
+                </label>
+                <label>
+                  Date of birth
+                  <input type="date" name="Date of birth">
+                </label>
+              </div>
+              <label>
+                Address
+                <input type="text" name="Address">
+              </label>
+              <div class="two-cols">
+                <label>
+                  ZIP Code
+                  <input type="text" name="ZIP">
+                </label>
+                <label>
+                  City
+                  <input type="text" name="City">
+                </label>
+              </div>
+              <div class="two-cols">
+                <label>
+                  Phone *
+                  <input type="tel" name="Phone" required>
+                </label>
+                <label>
+                  Email address *
+                  <input type="email" name="Email" required>
+                </label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Application documents</legend>
+              <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+              <div class="two-cols">
+                <label>
+                  Application letter
+                  <input type="file" name="Application letter" accept=".doc,.docx,.pdf">
+                </label>
+                <label>
+                  Curriculum vitae
+                  <input type="file" name="Curriculum vitae" accept=".doc,.docx,.pdf">
+                </label>
+              </div>
+              <p>Possible file types: DOC, PDF. Maximum file size: 10 MB.</p>
+            </fieldset>
+            <div class="btns">
+              <input type="text" name="_gotcha" value="" style="display:none;">
+              <input type="submit" value="Submit application">
+            </div>
+          </form> -->
+        <!-- </section> -->
+
+        <!-- <section class="text-center my-5">
+        <button class="viewall-button" style=" background-image: linear-gradient(to right, #225280ed , #126f53de);">View All</button>
+        </section> -->
+
+
+        <section class="iframe-section">
+          <iframe src="https://promea.kekahire.com/" class="iframeOpenings" name="frm">
+            Alternative text for browsers that do not understand IFrames.
+        </iframe>
+        </section>
+       
+    </div>
+
+    <!-- <div class="sec1_boxtype1 about_info en">
+            <div class="tabs">
+                
+                <ul class="tab tab_menu_ul">
+                    <li class="tab_menu on" code="about"><a href="#">About Us</a></li>
+                    <li class="tab_menu"    code="ceo"><a href="#">Our Albums</a></li>
+                    <li class="tab_menu"    code="history"><a href="#">Our Journey</a></li>
+
+                    <li class="tab_menu"    code="esg"><a href="#">Our Certifications</a></li>
+                    
+                    <li class="tab_menu"    code="esg_standards"><a href="#">Our Team</a></li>
+                    
+                </ul>
+                <article class="selectBox">
+                    <select class="m-tab tab_menu_selector">
+                        <option value="option1" code="about" selected>About Us</option>
+                        <option value="option2" code="ceo" >Our Albums</option>
+                        <option value="option3" code="history" >Our Journey</option>
+
+                        <option value="option7" code="esg" >Our Certifications</option>
+                        
+                        <option value="option6" code="esg_standards" >Our Team</option>
+                        
+                    </select>
+                </article>
+                <div class="tab-select info_type1 info_type1_1 on">
+                    <div class="info_box info_box1 boxtype">
+                        <div class="tab-decoration tab-decoration1">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="47.099" height="53.094" viewBox="0 0 47.099 53.094"><g id="Group_25148" data-name="Group 25148" transform="translate(-1689.349 -3613.792)"><path id="Path_30956" data-name="Path 30956" d="M3.155,26.248V5.65A1.89,1.89,0,0,1,3.84,4.181a2.355,2.355,0,1,0-3-.026,1.963,1.963,0,0,1,.718,1.5v20.6a1.89,1.89,0,0,1-.686,1.469,2.355,2.355,0,1,0,3,.026A1.963,1.963,0,0,1,3.155,26.248Z" transform="translate(1731.927 3613.792) rotate(31)" fill="#7e8cd6"></path><path id="Path_30954" data-name="Path 30954" d="M3.372,5.65,3.154,26.1a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.773,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.372,5.65Z" transform="translate(1689.349 3642.667) rotate(-90)" fill="#7e8cd6"></path><path id="Path_30955" data-name="Path 30955" d="M3.472,5.65,3.154,26.34a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.872,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.472,5.65Z" transform="matrix(-0.848, 0.53, -0.53, -0.848, 1736.448, 3664.222)" fill="#7e8cd6"></path></g></svg>
+                        </div>
+                        <div class="tab-decoration tab-decoration2">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 47.099 53.094"><g id="Group_25148" data-name="Group 25148" transform="translate(-1689.349 -3613.792)"><path id="Path_30956" data-name="Path 30956" d="M3.155,26.248V5.65A1.89,1.89,0,0,1,3.84,4.181a2.355,2.355,0,1,0-3-.026,1.963,1.963,0,0,1,.718,1.5v20.6a1.89,1.89,0,0,1-.686,1.469,2.355,2.355,0,1,0,3,.026A1.963,1.963,0,0,1,3.155,26.248Z" transform="translate(1731.927 3613.792) rotate(31)" fill="#7e8cd6"></path><path id="Path_30954" data-name="Path 30954" d="M3.372,5.65,3.154,26.1a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.773,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.372,5.65Z" transform="translate(1689.349 3642.667) rotate(-90)" fill="#7e8cd6"></path><path id="Path_30955" data-name="Path 30955" d="M3.472,5.65,3.154,26.34a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.872,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.472,5.65Z" transform="matrix(-0.848, 0.53, -0.53, -0.848, 1736.448, 3664.222)" fill="#7e8cd6"></path></g></svg>
+                        </div>
+                        <div class="tab-decoration tab-decoration3">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 47.099 53.094"><g id="Group_25148" data-name="Group 25148" transform="translate(-1689.349 -3613.792)"><path id="Path_30956" data-name="Path 30956" d="M3.155,26.248V5.65A1.89,1.89,0,0,1,3.84,4.181a2.355,2.355,0,1,0-3-.026,1.963,1.963,0,0,1,.718,1.5v20.6a1.89,1.89,0,0,1-.686,1.469,2.355,2.355,0,1,0,3,.026A1.963,1.963,0,0,1,3.155,26.248Z" transform="translate(1731.927 3613.792) rotate(31)" fill="#7e8cd6"></path><path id="Path_30954" data-name="Path 30954" d="M3.372,5.65,3.154,26.1a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.773,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.372,5.65Z" transform="translate(1689.349 3642.667) rotate(-90)" fill="#7e8cd6"></path><path id="Path_30955" data-name="Path 30955" d="M3.472,5.65,3.154,26.34a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.872,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.472,5.65Z" transform="matrix(-0.848, 0.53, -0.53, -0.848, 1736.448, 3664.222)" fill="#7e8cd6"></path></g></svg>
+                        </div>
+                        <p>
+                            Promea Therapeutics is an innovative medical device manufacturing company specializing in Life Science products, Diagnostics;
+                            including Clinical Chemistry, Immunodiagnostics, Molecular Diagnostics, and Infusion Therapies. We aim to make a significant
+                            difference to global healthcare markets through greater access to quality diagnostics as well as critical care parenterals.
+                                </p>
+                                <p>We have a highly skilled & dedicated R&D team who are in constant pursuit of precision, quality, and innovation. Our state-ofthe-art manufacturing facilities drive quality production of our innovative Invitro Diagnostic Medical Devices, Large & Small
+                                    Volume Parentals and Biologics to satisfy the needs of our customers.
+                                </p>
+                               
+                              
+                        
+                        
+                    </div>
+                    <div class="vision-type2">
+                        <div class="tab-decoration tab-decoration4">
+                            <svg xmlns="https://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 47.099 53.094"><g id="Group_25148" data-name="Group 25148" transform="translate(-1689.349 -3613.792)"><path id="Path_30956" data-name="Path 30956" d="M3.155,26.248V5.65A1.89,1.89,0,0,1,3.84,4.181a2.355,2.355,0,1,0-3-.026,1.963,1.963,0,0,1,.718,1.5v20.6a1.89,1.89,0,0,1-.686,1.469,2.355,2.355,0,1,0,3,.026A1.963,1.963,0,0,1,3.155,26.248Z" transform="translate(1731.927 3613.792) rotate(31)" fill="#7e8cd6"></path><path id="Path_30954" data-name="Path 30954" d="M3.372,5.65,3.154,26.1a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.773,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.372,5.65Z" transform="translate(1689.349 3642.667) rotate(-90)" fill="#7e8cd6"></path><path id="Path_30955" data-name="Path 30955" d="M3.472,5.65,3.154,26.34a1.891,1.891,0,0,0,.686,1.469,2.355,2.355,0,1,1-3,.026,1.963,1.963,0,0,0,.718-1.5L1.872,5.65a1.891,1.891,0,0,0-.686-1.469,2.355,2.355,0,1,1,3-.026A1.963,1.963,0,0,0,3.472,5.65Z" transform="matrix(-0.848, 0.53, -0.53, -0.848, 1736.448, 3664.222)" fill="#7e8cd6"></path></g></svg>
+                        </div>
+                        <ul class="boxtype clear boxtype01">
+                            <li>
+                                <div class="concept_group01">OUR VISION</div>
+                                <em>OUR VISION</em>
+                                 <p>We aspire to be the customers preferred and most trusted medical, healthcare & Diagnostic device manufacturer uplifting the
+                                    quality and dwindling the cost of health care for patients.</p>
+                            </li>
+                            <li>
+                                <div class="concept_group02">OUR MISSION</div>
+                                <em>OUR MISSION</em>
+                                <p>Our mission is to develop high quality medical, healthcare & Diagnostic products and to make them available in the remotest
+                                    parts of the planet at an affordable price which can easily be accessible to all sections of the medical community to benefit
+                                    human health.</p>
+                            </li>
+                            <li>
+                                <div class="concept_group03">OUR CORE VALUES</div>
+                                <em>OUR CORE VALUES</em>
+                                <p>Customer Priority Approach : We believe that the customer is the driving force behind all we do and we strive to anticipate and
+                                    meet their needs</p>
+                                    <p>
+                                        Continuous Improvement : We are dedicated to the pursuit of perfection, which prerequisites our customers, our vendors, and
+    our employees.</p>
+    <p>
+        Commitment : We do what we say. We believe in team work to attain the long-term interests of our company.</p>
+        <P>
+            Courage : We are courageous and prepared to take risks to find new paths.</P>
+            
+<p>
+    Care : We care about people, health, safety, society and the environment.
+                                    </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-select info_type1 info_type2 rd-pd0">
+                    <div class="info_box info_box2_1">
+                        <h3 class="boxtype">Our Albums</h3>
+                        <div data-trigger class="boxtype ceo01 ceobox">
+                            <ul class="clear">
+                                <li>
+                                    <div>
+                                        <strong>
+                                            <span>PROMEA</span> is a healthy company that protects the humanity's health. It is a market leading global company that has developed the diagnostic reagent to diagnose illnesses on the scene, providing platforms worldwide consisting of screen tests and confirmation tests.
+                                        </strong>
+                                        <p>
+                                            Throughout history, humanity has been threatened by various illnesses and new virus outbreaks, and won't be free from them in the future, either.
+                                        </p>
+                                        <p>
+                                            PROMEA will develop and provide the diagnostic reagent to quickly and accurately diagnose various illnesses and new viruses threatening humanity. By contributing to medical treatment in this way, we will try our best in protecting the health of humanity.
+                                        </p>
+                                        <dl class="t-mo_all">
+                                            <dt>Vice chairman | CEO</dt>
+                                            <dd>Hyo Keun Lee</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>CEO 이미지</span>
+                                    <dl class="t-pc_all">
+                                        <dt>Vice chairman | CEO</dt>
+                                        <dd>Hyo Keun Lee</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                        <div data-trigger class="ceo02 ceobox">
+                            <ul class="clear boxtype">
+                                <li>
+                                    <div>
+                                        <p>
+                                            <strong>Diagnosing diseases early</strong> and maintaining a healthy life is a common aspiration of mankind. Our work is valuable as it contributes to the healthy life of mankind through technology development. based on faster, more accurate, and more convenient testing tools, PROMEA challenge ourselves to become the Global Leading Company in the in vitro diagnostic testing field ranging from screening tests to confirmatory tests.
+                                        </p>
+                                        <p>
+                                            PROMEA aim to provide a higher level of satisfaction to our clients through management focusing on innovation, creativity, and efficiency. In addition, by pursuing a sustainable growth through strict compliance with norms and ethical management, we promote the happiness of our employees, enhance the value of our shareholders, and do not forget the responsibility as a social enterprise to become a healthy company growing like an evergreen tree.
+                                        </p>
+                                        <p>
+                                            Just as water, sand, and gravel combine together with cement to form solid concrete which is harder than rock, we will run and challenge together for a common goal based on warm humanity.
+                                            We kindly ask for your continued interest and support in this path.
+                                        </p>
+                                        <dl class="t-mo_all">
+                                            <dt>President | CEO</dt>
+                                            <dd>Tae young Heo</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span>CEO 이미지</span>
+                                    <dl class="t-pc_all">
+                                        <dt>President | CEO</dt>
+                                        <dd>Tae young Heo</dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-select info_type3">
+                    <div class="info_box3_1 boxtype">
+    <h3>Our Journey</h3>
+    <div class="history clear">
+        <ul>
+                            <li>
+                    <div class="his_wrap his_wrap1" data-year="2021">
+                        <strong>2022</strong>
+                                                    <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            Semi Automated Biochemistry Analyzer Launched
+                                        </p>
+                                        <span>01</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>                            <div>
+                                <ul><li ></li></ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                        <span class="ml0">02</span>
+                                        <p>
+                                            Fully Automated Biochemistry Analyzer Launched
+                                        </p>
+                                    </li>                                    <li class="his_img">
+                                        <img src="../data/board/103/429/180179986b11aa90a8a935c3920494ae.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>                            <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            Large Volume Parentals Launched
+                                        </p>
+                                        <span>03</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>                            <div>
+                                <ul><li ></li></ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                        <span class="ml0">04</span>
+                                        <p>
+                                            Biologics Launched
+                                        </p>
+                                    </li>                                    <li class="his_img">
+                                        <img src="../data/board/103/429/3ca001d9f664b72fd3b95bd0dfbcf2a4.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul><li ></li></ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                        <span class="ml0">05</span>
+                                        <p>
+                                            Blood Glucose Meter & Strips Launched
+                                        </p>
+                                    </li>                                    <li class="his_img">
+                                        <img src="../data/board/103/429/180179986b11aa90a8a935c3920494ae.jpg" alt="">
+                                    </li>
+                                </ul>
+                            </div>        
+                    </div>
+                </li>                <li>
+                    <div class="his_wrap his_wrap1" data-year="2021">
+                        <strong>2021</strong>
+                                                    <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            Clinical Chemistry Reagents Launched
+                                        </p>
+                                        <span>06</span>
+                                    </li>                                    <li class="his_img">
+                                        <img src="../data/board/103/428/24b96718ddfbf07563eb99199110d3d2.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>                            <div>
+                                <ul><li ></li></ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                        <span class="ml0">07</span>
+                                        <p>
+                                            Elisa Kits Launched
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>                            <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            Electrolyte Analyzer Launched
+                                        </p>
+                                        <span>08</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>                            <div>
+                                <ul><li ></li></ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                        <span class="ml0">09</span>
+                                        <p>
+                                            VTM Kits Launched
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>                            <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            RT-PCR (Covid) Launched
+                                        </p>
+                                        <span>10</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>                         
+                    </div>
+                </li>                <li>
+                    <div class="his_wrap his_wrap1" data-year="2020">
+                        <strong>2020</strong>
+                                                    <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            Hematology Reagents Launched 
+                                        </p>
+                                        <span>11</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <div><ul>
+                                <li></li>
+                            </ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                                                            <span>12</span>
+                                        <p>
+                                            ITM Kits Launched
+                                        </p>
+                                    </li>
+                                </ul>
+                                
+                            </div>
+
+                            <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            RNA Kits Launched 
+                                        </p>
+                                        <span>13</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                                <ul class="his-dotRight point">
+                                                                        <li>
+                                                                            <span>14</span>
+                                        <p>
+                                            Haemoglobin Meter Launched 
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </li>                <li>
+                    <div class="his_wrap his_wrap1" data-year="2018">
+                        <strong>2019</strong>
+                                                    <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            State of the Art Manufacturing Facility Constructed
+                                        </p>
+                                        <span>15</span>
+                                    </li>                                    <li class="his_img">
+                                        <img src="../data/board/103/426/b19bdd0f80583229e5fb90fb70557e9b.jpg" alt="">
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                    </div>
+                </li>                <li>
+                    <div class="his_wrap his_wrap1" data-year="2017">
+                        <strong>2017</strong>
+                                                    <div>
+                                <ul class="fl_right his-dotLeft point">
+                                                                        <li>
+                                        <p>
+                                            Our Incorporation
+                                        </p>
+                                        <span>16</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li></li>
+                                </ul>
+                            </div>          
+                    </div>
+                </li>      
+        </ul>
+        <div class="bars"></div>
+        <div class="main_bar"></div>
+        <div class="main_bar_default"></div>
+    </div>
+</div>
+
+<script>
+    $().ready(function () {
+        $(".yearsBtn").off('click').on('click', function () {
+            let target_year = $(this).attr('data-year');
+            let position = $('.his_wrap[data-year=' + target_year + ']').offset();
+            $('body,html').stop().animate({scrollTop: position.top}, 500);
+
+            $(this).addClass('on');
+            $(this).siblings('button').removeClass('on');
+        });
+    });
+
+</script>
+                </div>
+
+
+
+
+                <div class="tab-select info_type7">
+
+
+                    <div class="info_type1">
+                       
+
+
+                        <script>
+                            $(function() {
+                                var esgTab = $('.esg__tab-wrap .item a');
+                                $(esgTab).click(function() {
+                                    if ($(this).parent().hasClass('on')) return false;
+
+                                    var tabIdx = $(this).parent().index();
+                                    $('.esg__con-item').eq(tabIdx).addClass('on').siblings().removeClass('on');
+                                    $(this).parent().siblings().removeClass('on');
+                                    $(this).parent().fadeIn(300).addClass('on');
+                                    return false;
+                                });
+
+                            });
+                        </script>
+
+
+                        <div class="info_box info_box02 boxtype certificate">
+                           
+    <h3>Our Certificate</h3>
+                            <img src="images/certificate1.jpeg" />
+                            <img src="images/certificate2.jpeg" />
+                            <img src="images/certificate3.jpeg" />
+                            <img src="images/certificate4.jpeg" />
+                            <img src="images/certificate5.jpeg" />
+                            <img src="images/certificate6.jpeg" />
+                            <img src="images/certificate7.jpeg" />
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="tab-select info_type6">
+                    <div class="info_box6_1">
+                        <div class="boxtype concept_type_txt">
+                            <div class="esg_info team-m">
+                                <h3>Our Team</h3>
+                                <section>
+                                    <div class="team d-flex flex-row">
+                                            <div class="team-text">
+                                                <h4>Dr. Rajesh Tummuru</h4>
+                                                <p>
+                                                    Dr. Rajesh has obtained an MBA at Vanderbilt University - Owen Graduate School of Management with a focus in healthcare &amp;
+            strategy and an M.B.B.S degree from MediCiti Institute of Medical Sciences.
+                                                </p>
+                                                <p>
+                                                    His passion, dedication as well as his exposure to the global health care landscape have laid foundation to many health care &amp;
+            diagnostic startup/s which have the potential to make an immence contribution to the global health care &amp; diagnostic needs to
+            attain quality diagnostics at affordable cost.
+                                                </p>
+                                            </div>
+                                            <div>
+                                                <img src="images/investor6.jpeg" alt="team1"/>
+                                                <div class="social-icons">
+                                                    <a href="#" class="fa fa-facebook"></a>
+                                                    <a href="#" class="fa fa-twitter"></a>
+                                                    <a href="#" class="fa fa-google"></a>
+                                                    <a href="#" class="fa fa-linkedin"></a>
+                                                </div>
+                                                
+                                            </div>
+                                          
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="team d-flex flex-row">
+                                        <div class="team-text">
+                                            <h4>Mr. Pavan Chandra Nagoor</h4>
+                                            <p>
+                                                Mr. Pavan has Mastered in Business Administration with Honours in Hardware Engineering and Networking with rich experience
+        in the field of Strategic Planning, Business Administration as well as Human Resource Management System.
+                                            </p>
+                                            <p>
+                                                He was a Commercial Leader with demonstrated history of growing business in the In Vitro Diagnostics (IVD) &amp; Health Care
+        Industry with innovative &quot;Go To Market&quot; Strategies. His experience as well as exposure in versatile Job Profiles along with
+        positive attitude and a passion has given him an opportunity to establish and accordingly relish himself as a trailblazer in all the
+        organizations which he has been associated with.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="images/investor6.jpeg" alt="team1"/>
+                                            <div class="social-icons">
+                                                <a href="#" class="fa fa-facebook"></a>
+                                                <a href="#" class="fa fa-twitter"></a>
+                                                <a href="#" class="fa fa-google"></a>
+                                                <a href="#" class="fa fa-linkedin"></a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="team d-flex flex-row">
+                                        <div class="team-text">
+                                            <h4>Mr. Piyush Bhavsar</h4>
+                                            <p>
+                                                Mr. Piyush has mastered in Chemistry and carries rich experience in manufacturing of versatile infusion products and injectables
+        which includes Non PVC bags, Multi chamber bags , Specialty products, Amino Acid products, FAT products.
+                                            </p>
+                                            <p>
+                                                He brings 30 years of experience in plant management and operations. His rich experience blended with exposure to all the
+        areas of plant operations have made him a reputable leader with the capability to handle diverse operations involved in the
+        injectable manufacturing plants.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <img src="images/investor6.jpeg" alt="team1"/>
+                                            <div class="social-icons">
+                                                <a href="#" class="fa fa-facebook"></a>
+                                                <a href="#" class="fa fa-twitter"></a>
+                                                <a href="#" class="fa fa-google"></a>
+                                                <a href="#" class="fa fa-linkedin"></a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2021-09-16 신규 추가 e -->
+    <!-- <div class="tab-select info_type4">
+                    <div class="info_box4_1">
+                        <div class="boxtype concept_type_txt">
+                            <h3>Concept</h3>
+                            <p data-trigger>
+                                The design was motivated by <strong>DNA</strong> and <strong>RNA</strong>. The three-dimensional circle represents dynamism.  We lead the company as a Global corporation that expands its business from IVD to gene testing based on progressive technology. We use blue as our Main Color so as to convey a trusting image as a corporation.
+                            </p>
+                        </div>
+                        <div class="concept_type_group" data-trigger>
+                            <div class="concept_group-wrap">
+                                <ul class="clear">
+                                    <li class="concept_group">
+                                        <em>CHALLENGE</em>
+                                        <!-- <p>CHALLENGE</p> -->
+    </li>
+    <li class="concept_group">
+        <!-- <em>INNOVATION</em> -->
+        <!-- <p>INNOVATION</p> -->
+    </li>
+    <li class="concept_group">
+        <!-- <em>COEXISTENCE</em> -->
+        <!-- <p>COEXISTENCE</p> -->
+    </li>
+    </ul>
+    </div>
+    </div>
+    <!-- <div class="concept_type_system boxtype" data-trigger>
+                            <h3>Logo System</h3>
+                            <p>
+                                <strong>CI Mark's ratio</strong> abides to the Grid System's ratio. We refrain from transformation or distortion outside the boundaries of our <strong>Basic System</strong>.
+                            </p>
+                           
+                        </div> -->
+    <!-- <div class="concept_group_color" data-trigger>
+                            <div class="concept_color-wrap boxtype">
+                                <h3>Color System</h3>
+                                <p>
+                                    The color of <strong>CI Mark</strong> is an important factor of constructing the corporation's Total Identity.<br>We refrain from using colors that are not our chosen colors.
+                                </p>
+                                <ul class="clear">
+                                    <li>
+                                        <h4>Pantone 2945c</h4>
+                                        <ul>
+                                            <li>C100  M45 Y0 K14</li>
+                                            <li>R0 G101 B172</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <h4>Pantone Cool Gray10c</h4>
+                                        <ul>
+                                            <li>C75 M0 Y0 K0</li>
+                                            <li>R102 G100 B100</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div> -->
+    </div>
+    </div>
+    <!-- <div class="tab-select info_type5">
+                    <div class="info_box5_1 boxtype">
+                        <div class="usercome">
+                            <h3>Directions</h3>
+                            <article>
+                                <h4>Promea Head Office</h4>
+                                <div class="come_address bb-1" id="addrObj1">
+                                    <strong>Promea Therapeutics Pvt. Ltd.,
+
+                                        Plot No. M4, Medical Device Park, Sultanpur, Patancheru, Sangareddy,
+                                        
+                                        Pin code: 502319</strong>
+                                    <ul>
+                                        <li>
+                                            <span>Tel</span>
+                                            <p>+91 9154938441</p>
+                                        </li>
+                                    </ul>
+                                    <button type="button" class="btns view_map_btn" data-key="1">View map</button>
+                                </div>
+                            </article>
+                            <div class="map"  >
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.6457458109194!2d78.31640671432143!3d17.572045087968185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb8da045c2af2b%3A0xca40b5276e601e9f!2sPromea%20Therapeutics!5e0!3m2!1sen!2sin!4v1667495017071!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+
+                        
+
+                        </div>
+                    </div>
+                </div> -->
+    </div>
+    </div>
+    </section>
+    </div>
+    <script type="text/javascript"
+        src="../../dapi.kakao.com/v2/maps/sdk8516.json?appkey=dab627ccc62c1c0228922700d9447ec2"></script>
+    <script>
+        var code = 'about';
+
+        var container1 = document.getElementById('map1');
+        var options1 = {
+            center: new kakao.maps.LatLng(37.2451472045551, 127.059909541599),
+            level: 3
+        };
+
+
+        var map1 = null;
+
+        var container2 = document.getElementById('map2');
+        var options2 = {
+            center: new kakao.maps.LatLng(36.6428949291375, 127.328036445682),
+            level: 3
+        };
+
+        var map2 = null;
+
+        var container3 = document.getElementById('map3');
+        var options3 = {
+            center: new kakao.maps.LatLng(37.1063877702225, 127.084029237655),
+            level: 3
+        };
+
+        var map3 = null;
+
+        var container4 = document.getElementById('map4');
+        var options4 = {
+            center: new kakao.maps.LatLng(37.28065564948, 127.118235116181),
+            level: 3
+        };
+
+        var map4 = null;
+
+
+        var container5 = document.getElementById('map5');
+        var options5 = {
+            center: new kakao.maps.LatLng(36.139943293304654, 128.4515858441251),
+            level: 3
+        };
+
+        var map5 = null;
+
+
+
+
+        $().ready(function () {
+
+
+            if (code != 'about') {
+                $(".tab_menu[code=" + code + "]").click();
+            }
+
+
+            $(".tab_menu_ul li").on('click', function () {
+                let code = $(this).attr('code');
+
+                history.replaceState({}, 'history', '/company/' + code);
+
+
+            });
+
+            $(".tab_menu_selector").on('change', function () {
+                let code = $(this).find('option:selected').attr('code');
+
+                history.replaceState({}, 'history', '/company/' + code);
+            });
+
+
+            $(".view_map_btn").on('click', function () {
+
+                var btn = $(this);
+                var key = $(this).attr('data-key');
+
+                if (btn.hasClass('cl_bgwh')) {
+                    btn.removeClass('cl_bgwh');
+                    $("#map" + key).show();
+                    $("#addrObj" + key).removeClass('bb-1');
+
+                    if (key == "1" && map1 == null) {
+                        map1 = new kakao.maps.Map(container1, options1);
+
+                        new kakao.maps.Marker({
+                            map: map1,
+                            position: options1.center
+                        });
+                    }
+                    else if (key == "2" && map2 == null) {
+                        map2 = new kakao.maps.Map(container2, options2);
+                        new kakao.maps.Marker({
+                            map: map2,
+                            position: options2.center
+                        });
+                    }
+                    else if (key == "3" && map3 == null) {
+                        map3 = new kakao.maps.Map(container3, options3);
+                        new kakao.maps.Marker({
+                            map: map3,
+                            position: options3.center
+                        });
+                    }
+                    else if (key == "4" && map4 == null) {
+                        map4 = new kakao.maps.Map(container4, options4);
+                        new kakao.maps.Marker({
+                            map: map4,
+                            position: options4.center
+                        });
+                    }
+
+                    else if (key == "5" && map5 == null) {
+                        map5 = new kakao.maps.Map(container5, options5);
+                        new kakao.maps.Marker({
+                            map: map5,
+                            position: options5.center
+                        });
+                    }
+
+
+                } else {
+                    btn.addClass('cl_bgwh');
+                    $("#map" + key).hide();
+                    $("#addrObj" + key).addClass('bb-1');
+                }
+            });
+
+
+            if (code == 'location') {
+                init_sdbMap();
+            }
+            else {
+
+
+                $(".tab_menu").on('click', function () {
+                    if ($(this).attr('code') == 'location') {
+                        init_sdbMap();
+                    }
+                });
+
+                $(".tab_menu_selector").on('change', function () {
+
+                    if ($(this).val() == 'option5') {
+                        init_sdbMap();
+                    }
+                });
+
+            }
+
+        });
+
+        function init_sdbMap() {
+            setTimeout(function () {
+
+                map1 = new kakao.maps.Map(container1, options1);
+
+                new kakao.maps.Marker({
+                    map: map1,
+                    position: options1.center
+                });
+
+            }, 1500);
+        };
+        $(document).ready(function () {
+
+            var thisOffest = [];
+
+
+            var video = $('.video-scroll iframe');
+
+            var tabBtnActive = $('.tabs .tab li');
+            var win_w = $(window).innerWidth();
+
+            tabBtnActive.on('click', function () {
+                let idx = $(this).index();
+                $(this).addClass('on');
+                $(this).siblings().removeClass('on');
+                $(this).parent('ul').siblings('div').eq(idx).addClass('on');
+                $(this).parent('ul').siblings('div').eq(idx).siblings('div').removeClass('on');
+
+                if (typeof changeTab === "function") {
+
+                }
+                if (tabBtnActive.hasClass('on')) {
+
+                }
+
+
+                if (idx != 0) {
+                    video.each(function (index) {
+                        $(this).attr('src', $(this).attr('src'));
+                        return false;
+                    });
+                }
+
+
+
+                console.log(idx);
+                return false;
+            });
+
+
+            $(window).on('scroll', function () {
+                var barHeight = $('.main_bar_default').height();
+                var barOffest = $('.main_bar').offset().top;
+                console.log('barOffest =', barOffest);
+                var windowScrollTop = $(window).scrollTop();
+                var activePosition = windowScrollTop;
+                if (activePosition > barHeight) {
+                    activePosition = barHeight;
+                }
+                console.log(activePosition);
+
+
+
+                var parsent = (activePosition / barHeight) * 100;
+                var xxx = parsent;
+                moveline(xxx);
+                if (xxx >= 100) {
+                    xxx = 100;
+                }
+
+                var tabActive = $('.section1 .tabs .tab li').eq(2);
+
+                for (var i = 0; i <= thisOffest.length; i++) {
+                    if (activePosition >= thisOffest[i] - barOffest) {
+                        pointBoxs.eq(i).addClass('on');
+                    } else if (activePosition <= thisOffest[i] - barOffest) {
+                        pointBoxs.eq(i).removeClass('on');
+                    }
+                }
+
+                if (tabActive.hasClass('on')) {
+                    moveline(xxx);
+
+                } else {
+
+                }
+
+            });
+
+            function moveline(xxx) {
+                $('.main_bar').css({ height: xxx + '%' });
+                $('.bars').css({ top: xxx + "%" });
+            }
+
+        });
+
+
+    </script>
+
+
+
+    <footer>
+        <div class="whats-app">
+            <svg style="pointer-events:none; display:block; height:50px; width:50px;" width="50px" height="50px"
+                viewBox="0 0 1024 1024">
+                <defs>
+                    <path id="htwasqicona-chat"
+                        d="M1023.941 765.153c0 5.606-.171 17.766-.508 27.159-.824 22.982-2.646 52.639-5.401 66.151-4.141 20.306-10.392 39.472-18.542 55.425-9.643 18.871-21.943 35.775-36.559 50.364-14.584 14.56-31.472 26.812-50.315 36.416-16.036 8.172-35.322 14.426-55.744 18.549-13.378 2.701-42.812 4.488-65.648 5.3-9.402.336-21.564.505-27.15.505l-504.226-.081c-5.607 0-17.765-.172-27.158-.509-22.983-.824-52.639-2.646-66.152-5.4-20.306-4.142-39.473-10.392-55.425-18.542-18.872-9.644-35.775-21.944-50.364-36.56-14.56-14.584-26.812-31.471-36.415-50.314-8.174-16.037-14.428-35.323-18.551-55.744-2.7-13.378-4.487-42.812-5.3-65.649-.334-9.401-.503-21.563-.503-27.148l.08-504.228c0-5.607.171-17.766.508-27.159.825-22.983 2.646-52.639 5.401-66.151 4.141-20.306 10.391-39.473 18.542-55.426C34.154 93.24 46.455 76.336 61.07 61.747c14.584-14.559 31.472-26.812 50.315-36.416 16.037-8.172 35.324-14.426 55.745-18.549 13.377-2.701 42.812-4.488 65.648-5.3 9.402-.335 21.565-.504 27.149-.504l504.227.081c5.608 0 17.766.171 27.159.508 22.983.825 52.638 2.646 66.152 5.401 20.305 4.141 39.472 10.391 55.425 18.542 18.871 9.643 35.774 21.944 50.363 36.559 14.559 14.584 26.812 31.471 36.415 50.315 8.174 16.037 14.428 35.323 18.551 55.744 2.7 13.378 4.486 42.812 5.3 65.649.335 9.402.504 21.564.504 27.15l-.082 504.226z">
+                    </path>
+                </defs>
+                <linearGradient id="htwasqiconb-chat" gradientUnits="userSpaceOnUse" x1="512.001" y1=".978" x2="512.001"
+                    y2="1025.023">
+                    <stop offset="0" stop-color="#61fd7d"></stop>
+                    <stop offset="1" stop-color="#2bb826"></stop>
+                </linearGradient>
+                <use xlink:href="#htwasqicona-chat" overflow="visible" style="fill: url(#htwasqiconb-chat)"
+                    fill="url(#htwasqiconb-chat)"></use>
+                <g>
+                    <path style="fill: #FFFFFF;" fill="#FFF"
+                        d="M783.302 243.246c-69.329-69.387-161.529-107.619-259.763-107.658-202.402 0-367.133 164.668-367.214 367.072-.026 64.699 16.883 127.854 49.017 183.522l-52.096 190.229 194.665-51.047c53.636 29.244 114.022 44.656 175.482 44.682h.151c202.382 0 367.128-164.688 367.21-367.094.039-98.087-38.121-190.319-107.452-259.706zM523.544 808.047h-.125c-54.767-.021-108.483-14.729-155.344-42.529l-11.146-6.612-115.517 30.293 30.834-112.592-7.259-11.544c-30.552-48.579-46.688-104.729-46.664-162.379.066-168.229 136.985-305.096 305.339-305.096 81.521.031 158.154 31.811 215.779 89.482s89.342 134.332 89.312 215.859c-.066 168.243-136.984 305.118-305.209 305.118zm167.415-228.515c-9.177-4.591-54.286-26.782-62.697-29.843-8.41-3.062-14.526-4.592-20.645 4.592-6.115 9.182-23.699 29.843-29.053 35.964-5.352 6.122-10.704 6.888-19.879 2.296-9.176-4.591-38.74-14.277-73.786-45.526-27.275-24.319-45.691-54.359-51.043-63.543-5.352-9.183-.569-14.146 4.024-18.72 4.127-4.109 9.175-10.713 13.763-16.069 4.587-5.355 6.117-9.183 9.175-15.304 3.059-6.122 1.529-11.479-.765-16.07-2.293-4.591-20.644-49.739-28.29-68.104-7.447-17.886-15.013-15.466-20.645-15.747-5.346-.266-11.469-.322-17.585-.322s-16.057 2.295-24.467 11.478-32.113 31.374-32.113 76.521c0 45.147 32.877 88.764 37.465 94.885 4.588 6.122 64.699 98.771 156.741 138.502 21.892 9.45 38.982 15.094 52.308 19.322 21.98 6.979 41.982 5.995 57.793 3.634 17.628-2.633 54.284-22.189 61.932-43.615 7.646-21.427 7.646-39.791 5.352-43.617-2.294-3.826-8.41-6.122-17.585-10.714z">
+                    </path>
+                </g>
+            </svg>
+            <p class="whats-app-cnt">WhatsApp us</p>
+        </div>
+        <div class="newsletterSec">
+
+
+
+            <div class="container-m row ">
+                <div class="footer-about">
+                    <img src="images/logo-white.png" style="height:70px; width:250px; padding-top:30px;">
+
+
+                </div>
+                <div class="newsletter">
+                    <div class="newsletter-left">
+                        <p><span>Subscribe</span> to Our Newsletter to get Important News, Amazing offers & inside soops
+                        </p>
+                    </div>
+                    <div class="newsletter-right">
+                        <div class="newEmail">
+                            <input type="text" />
+                            <button>Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-footer">
+            <div class="container-m">
+
+
+                <div class="footer-links pl-0">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a> </li>
+                        <li><a href="about">About Us</a> </li>
+                        <li><a href="products">Products</a> </li>
+                        <li><a href="career">Careers</a> </li>
+                        <li><a href="blog">Blogs</a> </li>
+                        <li><a href="getintouch">Get In Touch</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-products">
+                    <h4>Products</h4>
+                    <div class="products">
+                        <div>
+                            <ul>
+                                <li><a href="electrolyte">Electrolyte</a> </li>
+                                <li><a href="hematology">Hematology</a> </li>
+                                <li><a href="clinicalchemistry">Clinical Chemistry</a> </li>
+                                <li><a href="immunoassay">Immuno Assay</a> </li>
+                                <li><a href="glucose">Glucose</a> </li>
+                                <li><a href="hemoglobin">Hemoglobin</a> </li>
+                                <li><a href="rapid">Rapid</a> </li>
+
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li><a href="elisa">Elisa</a> </li>
+                                <li><a href="rt-pcr">RT-PCR</a> </li>
+                                <li><a href="ivfluids">Iv Fluids</a> </li>
+                                <li><a href="biologics">Biologics</a> </li>
+                                <li><a href="homehealthcare">Home health care</a> </li>
+                                <li><a href="others">others</a> </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer-address">
+                    <h4>Address</h4>
+                    Promea Therapeutics Pvt. Ltd.,<br>
+                    Plot No. M4, Medical Device Park, Sultanpur, Patancheru, Sangareddy,<br>
+                    Pin code: 502319
+                    <label>Tel: +91 9154938441</label>
+                    <label>email: info@promea.in</label>
+                   <div class="social">
+                        <a href="https://www.facebook.com/promealtd" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://twitter.com/promealtd" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@promealtd" target="_blank"><i class="fa fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/promealtd/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/promealtd" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-lower">
+            <div class="container-m">
+                <div class="copyright_wrapper h-center">
+                    <p>All rights reserved |&nbsp;&nbsp; <a href="#">Skyhit Media</a></p>
+                </div>
+                <!-- <div class="social">
+                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-youtube"></i>
+                  <i class="fa fa-instagram"></i>
+                  <i class="fa fa-pinterest"></i>
+              </div> -->
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- floating -->
+    <section class="floating">
+        <article class="sidebtn">
+            <div>
+                <button type="button" class="side__btn">더보기</button>
+                <ul>
+                    <li>
+                        <a href="../support/contactus">
+                            <strong>Contact Us</strong>
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../board">
+                            <strong>NEWS</strong>
+                            <span></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../product/main3c20?bcode=11">
+                            <strong>Product</strong>
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <a href="#" class="top">Top</a>
+    </section>
+    <div class="dim"></div>
+
+
+    <!-- <script src="../assets/js/paging39de.js?v=20221103"></script>
+
+    
+    <script>
+    var frame = document.getElementById('myFrame'); frame.onload = function () {
+    var body =
+    frame.contentWindow.document.querySelector('body');
+    body.style.color = 'red';
+    body.style.fontSize = '20px';
+    body.style.lineHeight = '20px';
+    };
+    </script> -->
+
+</body>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/63df42e9c2f1ac1e20317835/1gog1qos3';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+    })();
+</script>
+<!--End of Tawk.to Script-->
+
+
+</html>
