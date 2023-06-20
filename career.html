@@ -45,7 +45,8 @@
     <script src="js/slick.min.js"></script>
     <script src="js/ScrollTrigger.min.js"></script>
     <script src="js/common.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 
     <script src="js/paging39de.js"></script>
 
@@ -64,6 +65,21 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-125033198-1');
+</script>
+<script>
+  function sendEmail() {
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "nagasatisharigela@gmail.com",
+    Password : "663D8A621802CB0B49F042D9B678A32FF57E",
+    To : 'boyinakavya@gmail.com',
+    From : "nagasatisharigela@gmail.com",
+    Subject : "Test email",
+    Body : "testing email"
+  }).then(
+    message => alert(message)
+  );
+}
 </script>
 </head>
 
@@ -748,9 +764,9 @@
                 <h4>Be A Promean</h4>
                 <p>Interested Candidates can apply by selecting the position & filling the necessary details or can
                     directly send your profile to us.</p>
-                    <form action="mailto:nagasatisharigela@gmail.com" method="post" enctype="text/plain">
-                      <input type="text" name="name" placeholder="Your Name">
-                      <input type="email" name="email" placeholder="Your Email" required><br>
+                    <form action="send_email.php" method="post">
+                      <input type="text" name="name" placeholder="Your Name" id="name">
+                      <input type="email" name="email" placeholder="Your Email" required id="email"><br>
                       <label>Select your gender</label><br>
                       <input type="radio" name="gender" value="male" id="cr1">
                       <label for="cr1">Male</label>
@@ -758,11 +774,11 @@
                       <label for="cr2">Female</label><br>
                       <label>Upload Resume</label>
                       <input type="file" id="myFile" name="filename">
-                      <input type="text" name="LinkedinPortfolio" placeholder="Enter Linkedin Portfolio Link">
-                      <input type="text" name="subject" placeholder="Subject"><br>
-                      <textarea name="message" placeholder="Write your message here..." required></textarea><br>
+                      <input type="text" name="LinkedinPortfolio" placeholder="Enter Linkedin Portfolio Link" id="linkedinlink">
+                      <input type="text" name="subject" placeholder="Subject" id="subject"><br>
+                      <textarea name="message" placeholder="Write your message here..." required id="message"></textarea><br>
                       <input type="submit" name="submit" value="Send" id="send" style="background-image: linear-gradient(to right, #225280ed, #126f53de);">
-                  </form>                  
+                  </form>                 
             </div>
         </section>
 
@@ -938,6 +954,37 @@
 
 
 </body>
+<script>
+  function sendEmail() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var fileInput = document.getElementById("myFile");
+    var file = fileInput.files[0];
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+    var linkedinlink = document.getElementById("linkedinlink").value;
+
+    var reader = new FileReader();
+    reader.onload = function () {
+        var fileData = reader.result;
+
+        var body = "Name: " + name + "<br/>Email: " + email + "<br/>Attachment: <a href='" + fileData + "' download='" + file.name + "'>" + file.name + "</a><br/>Subject: " + subject + "<br/>Message: " + message + "<br/>Linkedin Link: " + linkedinlink + "<br/>";
+
+        Email.send({
+            Host: "smtp.elasticemail.com",
+            Username: "contact@skyhitmedia.com",
+            Password: "74ABBF28761285B5CB3B360E2E465F3F4C1B",
+            To: "boyinakavya@gmail.com",
+            From: "contact@skyhitmedia.com",
+            Subject: "Career opportunities",
+            Body: body,
+        }).then(function (message) {
+            alert(message);
+        });
+    };
+    reader.readAsDataURL(file);
+}
+</script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
