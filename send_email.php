@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $body .= "Content-Disposition: attachment" . $eol;
     $body .= $content . $eol;
     $body .= "--" . $separator . "--";
-    
+    print_r($_POST)
     if (mail($mailto, $subject, $body, $headers)) {
         echo "mail send ... OK"; // do what you want after sending the email
     } else {
