@@ -764,7 +764,7 @@
                 <h4>Be A Promean</h4>
                 <p>Interested Candidates can apply by selecting the position & filling the necessary details or can
                     directly send your profile to us.</p>
-                    <form action="send_email.php" method="post" netlify>
+                    <form action="" method="post" onsubmit="sendEmail(event)">
                       <input type="text" name="name" placeholder="Your Name" id="name">
                       <input type="email" name="email" placeholder="Your Email" required id="email"><br>
                       <label>Select your gender</label><br>
@@ -955,35 +955,28 @@
 
 </body>
 <script>
-  function sendEmail() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var fileInput = document.getElementById("myFile");
-    var file = fileInput.files[0];
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-    var linkedinlink = document.getElementById("linkedinlink").value;
+  function sendEmail(event) {
+    event.preventDefault(); // Prevent form submission
 
-    var reader = new FileReader();
-    reader.onload = function () {
-        var fileData = reader.result;
-
-        var body = "Name: " + name + "<br/>Email: " + email + "<br/>Attachment: <a href='" + fileData + "' download='" + file.name + "'>" + file.name + "</a><br/>Subject: " + subject + "<br/>Message: " + message + "<br/>Linkedin Link: " + linkedinlink + "<br/>";
-
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "contact@skyhitmedia.com",
-            Password: "74ABBF28761285B5CB3B360E2E465F3F4C1B",
-            To: "boyinakavya@gmail.com",
-            From: "contact@skyhitmedia.com",
-            Subject: "Career opportunities",
-            Body: body,
-        }).then(function (message) {
-            alert(message);
-        });
-    };
-    reader.readAsDataURL(file);
-}
+    // Get form data
+    var formData = new FormData(event.target);
+console.log(formData, 'form');
+    // Perform asynchronous email sending
+    fetch(event.target.action, {
+        method: "POST",
+        body: formData
+      })
+      .then(function(response) {
+        if (response.ok) {
+          alert("Email sent successfully!");
+        } else {
+          alert("Failed to send email. Please try again.");
+        }
+      })
+      .catch(function(error) {
+        alert("An error occurred while sending the email. Please try again later.");
+      });
+  }
 </script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
