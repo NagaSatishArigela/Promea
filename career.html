@@ -766,6 +766,9 @@
                 <h4>Be A Promean</h4>
                 <p>Interested Candidates can apply by selecting the position & filling the necessary details or can
                     directly send your profile to us.</p>
+                    <?php if (!empty($statusMsg)) { ?>
+                      <p class="statusMsg <?php echo $msgClass; ?>"><?php echo $statusMsg; ?></p>
+                  <?php } ?>
                     <form action="send_email.php" method="post" enctype="multipart/form-data">
                       <input type="text" name="name" placeholder="Your Name" id="name">
                       <input type="email" name="email" placeholder="Your Email" required id="email"><br>
