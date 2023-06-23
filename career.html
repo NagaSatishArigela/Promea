@@ -766,7 +766,7 @@
                 <h4>Be A Promean</h4>
                 <p>Interested Candidates can apply by selecting the position & filling the necessary details or can
                     directly send your profile to us.</p>
-                    <form action="send_email.php" method="post">
+                    <form action="send_email.php" method="post" enctype="multipart/form-data">
                       <input type="text" name="name" placeholder="Your Name" id="name">
                       <input type="email" name="email" placeholder="Your Email" required id="email"><br>
                       <label>Select your gender</label><br>
@@ -775,7 +775,7 @@
                       <input type="radio" name="gender" value="female" id="cr2">
                       <label for="cr2">Female</label><br>
                       <label>Upload Resume</label>
-                      <input type="file" id="myFile" name="filename">
+                      <input type="file" id="myFile" name="attachment">
                       <input type="text" name="LinkedinPortfolio" placeholder="Enter Linkedin Portfolio Link" id="linkedinlink">
                       <input type="text" name="subject" placeholder="Subject" id="subject"><br>
                       <textarea name="message" placeholder="Write your message here..." required id="message"></textarea><br>
@@ -956,7 +956,7 @@
 
 
 </body>
-<script>
+<!-- <script>
   function sendEmail() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -986,7 +986,7 @@
     };
     reader.readAsDataURL(file);
 }
-</script>
+</script> -->
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();

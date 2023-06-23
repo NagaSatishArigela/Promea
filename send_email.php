@@ -1,4 +1,3 @@
-
 <?php
 $postData = $uploadedFile = $statusMsg = '';
 $msgClass = 'errordiv';
@@ -20,11 +19,11 @@ if(isset($_POST['submit'])){
             $uploadStatus = 1;
              
             // Upload attachment file
-            if(!empty($_FILES["myFile"]["name"])){
+            if(!empty($_FILES["attachment"]["name"])){
                  
                 // File path config
                 $targetDir = "uploads/";
-                $fileName = basename($_FILES["myFile"]["name"]);
+                $fileName = basename($_FILES["attachment"]["name"]);
                 $targetFilePath = $targetDir . $fileName;
                 $fileType = pathinfo($targetFilePath,PATHINFO_EXTENSION);
                  
@@ -32,7 +31,7 @@ if(isset($_POST['submit'])){
                 $allowTypes = array('pdf', 'doc', 'docx', 'jpg', 'png', 'jpeg');
                 if(in_array($fileType, $allowTypes)){
                     // Upload file to the server
-                    if(move_uploaded_file($_FILES["myFile"]["tmp_name"], $targetFilePath)){
+                    if(move_uploaded_file($_FILES["attachment"]["tmp_name"], $targetFilePath)){
                         $uploadedFile = $targetFilePath;
                     }else{
                         $uploadStatus = 0;
@@ -47,7 +46,7 @@ if(isset($_POST['submit'])){
             if($uploadStatus == 1){
                  
                 // Recipient Email, write your email here
-                $toEmail = 'nagasatisharigela@email.com';
+                $toEmail = 'naga081995@gmail.com';
  
                 // Sender Data
                 $from = $email;
